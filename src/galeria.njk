@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+title: Galería
+eleventyNavigation:
+  key: galeria
+  title: Galería
+  order: 2
+---
+
+<div class="col-12">
+  <h1>Algunas de nuestras impresiones</h1>
+  <p></p>
+
+ 
+{% for elemento in fotos %}
+ {% include 'components/project.njk' %}
+{% endfor %}
+</div>
